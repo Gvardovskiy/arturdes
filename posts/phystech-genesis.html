@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+  <title>Хакатон-платформа для Phystech Genesis</title>
+  <link rel="stylesheet" href="../assets/css/ids/reset.css">
+  <link rel="stylesheet" href="../assets/css/ids/settings.css">
+  <link rel="stylesheet" href="../assets/css/ids/colors.css">
+  <link rel="stylesheet" href="../assets/css/ids/layout.css">
+  <link rel="stylesheet" href="../assets/css/ids/ids.css">
+  <link rel="stylesheet" href="../assets/css/ids/navbar.css">
+  <link rel="stylesheet" href="../assets/css/ids/gallery.css">
+  <link rel="stylesheet" href="../assets/css/ids/footnotes.css">
+  <link rel="stylesheet" href="../assets/css/shared.css">
+  <link rel="stylesheet" href="../assets/css/post.css">
+</head>
+<body class="ids">
+  <div class="page">
+    <header class="site-header">
+      <div class="identity">
+        <a href="../">
+          <img class="avatar" src="../images/icons/avatar-placeholder.svg" alt="Артур Зарипов">
+        </a>
+        <div class="who">
+          <p>Артур Зарипов,</p>
+          <p>продуктовый дизайнер</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Toggle mode">
+          <img src="../images/icons/toggle.svg" alt="toggle mode" width="24" height="24">
+        </button>
+        <a class="cv-link" href="../">
+          <span class="cv-dot">
+            <img src="../images/icons/dot.svg" alt="" width="24" height="24">
+          </span>
+          cv
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <div class="ids__wrapper L">
+        <div class="ids__text-width">
+          <h1>Хакатон-платформа для Phystech Genesis</h1>
+          <div class="ids__space"></div>
+          <p class="loud">Сфокусировались на мобильном опыте, чтобы сделать быстрый вход в команду.</p>
+          <div class="ids__space L"></div>
+          <h2>Команда</h2>
+          <p>Дизайнер, продукт, два разработчика и аналитик. Работали 0–1 за 10 дней.</p>
+
+          <div class="ids__space"></div>
+          <h3>Ключевые решения</h3>
+          <ul>
+            <li>Лендинг + регистрация в один экран, без переходов в браузер.</li>
+            <li>Сделали витрину треков с фильтрами и понятным дедлайном.</li>
+            <li>Для менторов — отдельная панель с быстрым апрувом запросов.</li>
+          </ul>
+
+          <div class="ids__space"></div>
+          <figure class="ids__rounded">
+            <img src="../images/references/ref-003.svg" alt="Карточки треков">
+            <figcaption>Карточки треков и мини-дашборд прогресса.</figcaption>
+          </figure>
+
+          <div class="ids__space"></div>
+          <p class="loud">Результат: 3,4k регистраций, 1,2k реальных команд, 92% удержание до питча.</p>
+
+          <div class="ids__space L"></div>
+          <section class="read-another">
+            <div class="read-another__label">
+              Следующий проект
+              <span class="read-another__icon"></span>
+            </div>
+            <a id="next-link" href="#" class="read-another__card">
+              <div class="read-another__image">
+                <img id="next-img" src="../images/placeholders/next-thumb.svg" alt="">
+              </div>
+              <div class="read-another__info">
+                <p id="next-title" class="read-another__title">Следующий проект</p>
+                <p id="next-desc" class="read-another__desc"></p>
+              </div>
+            </a>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    (async function attachNext() {
+      const currentSlug = 'phystech-genesis';
+      try {
+        const res = await fetch('../content/posts.json');
+        const posts = (await res.json()).filter(p => p.slug);
+        const idx = posts.findIndex((p) => p.slug === currentSlug);
+        const next = posts[(idx + 1) % posts.length];
+        const link = document.getElementById('next-link');
+        const title = document.getElementById('next-title');
+        const desc = document.getElementById('next-desc');
+        const img = document.getElementById('next-img');
+        link.href = `./${next.slug}.html`;
+        title.textContent = next.title;
+        desc.textContent = next.description || '';
+        img.src = `../${next.image || 'images/placeholders/next-thumb.svg'}`;
+      } catch (e) {
+        console.warn('Cannot load next article', e);
+      }
+    })();
+  </script>
+</body>
+</html>
+

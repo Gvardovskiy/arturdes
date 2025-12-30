@@ -1,0 +1,56 @@
+[
+  {
+    "slug": null,
+    "link": "https://pgenesis.ru/platform",
+    "title": "Хакатон-платформа для Phystech Genesis",
+    "description": "Сделал умный генератор афиши ивента, страницу платформы и форму клиента.",
+    "image": "images/posts/532533535.png",
+    "badge_dprofile": false,
+    "badge_madein": true,
+    "tags_visible": ["EdTech", "Product", "Web"],
+    "tags_hidden": ["edtech", "product", "hackathon", "platform"]
+  },
+  {
+    "slug": null,
+    "title": "SAAS-сервис статистики для Telegram",
+    "description": "С артдиром сделали MVP, дальше я занимался поддержкой, а после ухода с проекта делал дизайн-ревью.",
+    "image": "images/posts/trustat-image.png",
+    "video": "images/video/trustat-video.mp4",
+    "badge_dprofile": false,
+    "badge_madein": true,
+    "tags_visible": ["B2B", "Product", "Web", "Telegram"],
+    "tags_hidden": ["telegram", "product"]
+  },
+  {
+    "slug": "telegram-miniapp-itogi",
+    "title": "Telegram MiniApp для Итогов года",
+    "description": "Сделал всё приложение, придумал логику, оформил статистику, а также сгенерировал нейрофоны.",
+    "image": "images/posts/Frame 2131328903.png",
+    "badge_dprofile": true,
+    "badge_madein": true,
+    "tags_visible": ["App", "AI-дизайн", "620k+ MAU"],
+    "tags_hidden": ["ai-design", "apps", "miniapps", "product"]
+  },
+  {
+    "slug": null,
+    "link": "https://t.me/TopGiftRobot/app",
+    "title": "NFT-приложение для TopGift",
+    "description": "Сделал 98% дизайна: кошелёк, лидерборды, игры, маркет, реферальная система, коллекции, операции, новогодние обновления и поддержка фронтендера.",
+    "image": "images/posts/topgift-image.png",
+    "badge_dprofile": false,
+    "badge_madein": true,
+    "tags_visible": ["Mobile", "App", "Telegram"],
+    "tags_hidden": ["product", "apps", "mobile"]
+  },
+  {
+    "slug": null,
+    "title": "Виджеты для Яндекс Книги",
+    "description": "Цель кейс-стади: повышение конверсии прочтения книги до конца с помощью шкалы прогресса, цитат из книги и её перемещения на экран iPhone.",
+    "image": "images/posts/bookmate.png",
+    "video": "images/video/books-video-3.mp4",
+    "badge_dprofile": false,
+    "badge_madein": false,
+    "tags_visible": ["Product", "IOS", "Concept", "After Effects"],
+    "tags_hidden": ["concept"]
+  }
+]

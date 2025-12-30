@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+  <title>Дизайнер Артур Зарипов</title>
+  <link rel="stylesheet" href="assets/css/shared.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="identity">
+        <img class="avatar" src="images/icons/avatar-placeholder.png" alt="Артур Зарипов">
+        <div class="who">
+          <p>Дизайнер мобильных приложений и веб-сервисов</p>
+          <p>Артур Зарипов</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <a class="icon-btn" href="https://dprofile.ru/zaripov" aria-label="Toggle mode" target="_blank" rel="noopener noreferrer">
+          <img src="images/icons/glyph-dprofile.svg" alt="toggle mode" width="24" height="24"></a>
+        <a class="cv-link" href="#">
+          <span class="cv-dot">
+            <img src="images/icons/file-text.svg" alt="" width="24" height="24">
+          </span>
+          cv
+        </a>
+      </div>
+    </header>
+
+    <section class="nav-panel">
+      <div class="nav-label">Я ищу</div>
+      <div class="selector-vertical">
+        <button class="selector-pill active" data-mode="designer">дизайнера</button>
+        <button class="selector-pill" data-mode="references">референсы</button>
+      </div>
+      <div class="nav-label nav-label--phrase">
+        <span class="phrase dynamic">который умеет</span>
+      </div>
+      <div class="selector-grid">
+        <button class="selector-pill active" data-category="all">Всё</button>
+        <button class="selector-pill" data-category="ai-design">AI-дизайн</button>
+        <button class="selector-pill" data-category="product">Продукт</button>
+        <button class="selector-pill" data-category="edtech">EdTech</button>
+        <button class="selector-pill" data-category="apps">Mobile</button>
+        <button class="selector-pill" data-category="miniapps">MiniApps</button>
+      </div>
+    </section>
+
+    <main id="content" aria-live="polite"></main>
+  </div>
+
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

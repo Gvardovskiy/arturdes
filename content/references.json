@@ -1,0 +1,28 @@
+[
+  {
+    "src": "images/references/ref-001.svg",
+    "alt": "Promo layout 01",
+    "tags": ["ai-design", "edtech"]
+  },
+  {
+    "src": "images/references/ref-002.svg",
+    "alt": "Mobile cards",
+    "tags": ["apps", "miniapps"]
+  },
+  {
+    "src": "images/references/ref-003.svg",
+    "alt": "Product dashboards",
+    "tags": ["product"]
+  },
+  {
+    "src": "images/references/ref-004.svg",
+    "alt": "EdTech onboarding",
+    "tags": ["edtech"]
+  },
+  {
+    "src": "images/references/ref-005.svg",
+    "alt": "AI UI concept",
+    "tags": ["ai-design"]
+  }
+]
+
